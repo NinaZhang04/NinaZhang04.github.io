@@ -203,5 +203,8 @@ nav ul li.header-name a{
     .header-name{
         padding-left: 20px;
     }
+    .header-text {
+        padding-top: 100px;
+    }
 }
 
