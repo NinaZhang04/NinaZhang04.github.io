@@ -5,7 +5,9 @@
     --darkpurple: #1C142C;
     --skyblue: #149FB2;
     --bluecyan: #4EB6B5;
+    --beige: #FAF0E6;
     --textcolor: var(--darkpurple);
+    --hovercolor: var(--skyblue);
 }
 *{
     margin: 0;
@@ -64,7 +66,6 @@ nav ul li:not(.header-name) a::after{
     height: 3px;
     background: var(--redpink);
     position: absolute;
-    left: 0;
     bottom: -6px;
     transition: all 0.5s ease;
     left: 50%; 
@@ -82,10 +83,6 @@ nav ul li.header-name a{
     font-size: 16px;
 }
 
-div p a {
-    
-} 
-
 .header-text{
     margin-top: 10%;
     font-size: 20px;
@@ -101,6 +98,61 @@ div p a {
     font-family: 'Poppins', sans-serif;
 }
 
+.in-text-links{
+    color: var(--redpink);
+    text-decoration: none;
+}
 
 
+.in-text-links:hover{
+    text-decoration: underline;
+    font-weight:bold;
+}
+
+
+.project-item {
+    position: relative;
+    display: inline-block;
+}
+
+#projects {
+    padding: 30px 0;
+}
+
+.project-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 40px;
+}
+
+.project-list div {
+    max-width: 100%;
+    height: auto;
+    background: var(--beige);
+}
+
+.overlay-title {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; /* Text color */
+    font-size: 20px; /* Text size */
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Optional text shadow */
+}
+
+.overlay-text {
+    color: var(--redpink); 
+    font-size: 16px; /* Text size */
+
+}
+
+
+.overlay-text ul li p{
+    text-decoration: none;
+    color: var(--redpink); 
+    font-size: 16px; /* Text size */
+    
+}
 
