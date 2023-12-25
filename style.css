@@ -10,18 +10,18 @@
     --textcolor: var(--darkpurple);
     --hovercolor: var(--skyblue);
 }
+
 *{
     margin: 0;
     padding: 0;
-    /*font-family: 'Poppins', sans-serif;*/
     font-family: 'Rubik';
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
     background: var(--bgcolor);
     color: var(--textcolor);
-    
 }
 
 #header{
@@ -34,11 +34,18 @@ body{
     padding: 10px 10%;
 }
 
+
 nav{
+    width: 80%;
+    background-color: rgb(255 255 255/ 80%);
+    position: fixed;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content:space-between;
     flex-wrap: wrap;
+    border: solid var(--bgcolor) 2px;
+    border-radius: 10px;
 }
 
 nav ul li:not(.header-name){
@@ -95,6 +102,7 @@ nav ul li.header-name a{
     margin-top: 20px;
 }
 
+
 .header-text p{
     font-family: 'Poppins', sans-serif;
 }
@@ -104,6 +112,9 @@ nav ul li.header-name a{
     text-decoration: none;
 }
 
+.header-name{
+    padding-left: 5px;
+}
 
 .in-text-links:hover{
     text-decoration: underline;
@@ -165,5 +176,32 @@ nav ul li.header-name a{
 .overlay-text ul {
     color: var(--darkpurple);
     font-size: 16px;
+}
+
+#contacts{
+    padding: 30px 0;
+}
+
+.social-icons {
+    color: var(--darkpurple);
+    font-size: 50px;
+}
+
+.social-icons a{
+    color: var(--darkpurple);
+    margin-right: 50px;
+    font-size: 50px;
+}
+
+.social-icons a:hover{
+    color: var(--redpink);
+}
+
+/*small screen css*/
+
+@media only screen and (max-width: 800px) {
+    .header-name{
+        padding-left: 20px;
+    }
 }
 
