@@ -5,7 +5,7 @@
     --darkpurple: #1C142C;
     --skyblue: #149FB2;
     --bluecyan: #4EB6B5;
-    --beige: #FAF0E6;
+    --greybeige: #F5F4F2;
     --textcolor: var(--darkpurple);
     --hovercolor: var(--skyblue);
 }
@@ -128,31 +128,39 @@ nav ul li.header-name a{
 .project-list div {
     max-width: 100%;
     height: auto;
-    background: var(--beige);
 }
+
+.project-list a {
+    text-decoration: none;
+}
+
+.project-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    padding: 40px;
+    max-width: 100%;
+    height: auto;
+    border: solid var(--redpink) 2px;
+    background: var(--greybeige);
+    border-radius: 20px;
+}
+
+
 
 .overlay-title {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Text color */
-    font-size: 20px; /* Text size */
+    color: var(--redpink);
+    font-size: 20px;
     text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Optional text shadow */
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: -10px;
 }
 
-.overlay-text {
-    color: var(--redpink); 
-    font-size: 16px; /* Text size */
-
-}
-
-
-.overlay-text ul li p{
-    text-decoration: none;
-    color: var(--redpink); 
-    font-size: 16px; /* Text size */
-    
+.overlay-text ul {
+    color: var(--darkpurple);
+    font-size: 16px;
 }
 
