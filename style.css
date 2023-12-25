@@ -127,7 +127,6 @@ nav ul li.header-name a{
 
 .project-list div {
     max-width: 100%;
-    height: auto;
 }
 
 .project-list a {
@@ -142,13 +141,11 @@ nav ul li.header-name a{
     justify-content: center; 
     padding: 40px;
     max-width: 100%;
-    height: auto;
+    height: 200px;
     border: solid var(--redpink) 2px;
     background: var(--greybeige);
     border-radius: 20px;
 }
-
-
 
 .overlay-title {
     color: var(--redpink);
