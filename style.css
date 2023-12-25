@@ -1,5 +1,6 @@
 :root {
     --bgcolor: #FFFFFF; 
+    --lightpink: #FFD5CE;
     --peach: #E08886; 
     --redpink: #B82438;
     --darkpurple: #1C142C;
@@ -145,6 +146,11 @@ nav ul li.header-name a{
     border: solid var(--redpink) 2px;
     background: var(--greybeige);
     border-radius: 20px;
+}
+
+.project-item:hover{
+    transition: all 0.2s ease-in-out;
+    background: var(--lightpink);
 }
 
 .overlay-title {
